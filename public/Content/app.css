@@ -1,8 +1,178 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{margin:0;
+background-color:#CBCBCB;
+font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.outerboxnav{
+	max-height: 250px;
+	height:250px;
+	background: url(/Assets/images/banner-bg.jpg);
+	background-size: cover;
+	
+}
+.outerboxnav img{
+	width:100%;
+	max-height:100%;
+	display:block;
+	margin:auto;
+}
+/*
+#wrapper{
+	height:40%;
+	background: url(/Assets/images/banner-bg.jpg) center no-repeat;
+}
+*/
+
+
+ul.topnav{
+	list-style-type:none;
+	margin:0;
+	padding:10px;
+	overflow:hidden;
+	/* background-color:#333; */
+	
+}
+ul.topnav li{float:left;}
+
+ul.topnav li a {
+	display:inline;
+	color:#f2f2f2;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+	transition:0.3s;
+	font-size:17px;
 }
 
-a {
-  color: #00B7FF;
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixelsdwide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+   /* float: right;*/
+    display: inline-block;
+  }
 }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    /*float: none;*/
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.outerbox{
+	margin-left:3%;
+	margin-right:3%;
+	background-color:#FFFFFF;
+	height:80%;
+	border-radius: 5px;
+	margin-top:-32px;
+	box-shadow: -5px 15px 36px 3px rgba(0,0,0,0.29);
+}
+
+.outerbox .profile-image img{
+	margin-left:45%;
+	margin-right:39%;
+	border-radius:537px;
+	margin-top:-61px;
+	border:5px white;
+	box-shadow: -5px 9px 36px 3px rgba(0,0,0,0.29);
+	width:11%;
+	min-width:11%;
+	
+}
+
+.outerbox .profile-image img:hover{
+	box-shadow: -5px 9px 36px 3px #fff;
+}
+
+.footer{
+	margin-top:35px;
+	color:#fff;
+	background-color:#CBCBCB;
+	height:5%;
+	margin-left:45px;
+}
+
+.title {
+    font-weight: 500;
+    color: #3C4858;
+}
+h3 {
+	padding:10px;
+    display: block;
+    font-size: 1.17em;
+    text-align:center;
+    font-weight: bold;
+}
+h6{
+	color: rgba(145, 145, 145, 1);
+	display:block;
+	font-size:14px;
+	font-weight:300;
+	text-align: center;
+	
+}
+.txt-description{
+	    color:rgba(145, 145, 145, 1);
+		text-align:center;
+		padding:10px;
+		margin-left:20%;
+		margin-right:20%;
+		margin-top:2%;
+		
+}
+#navigationTab {
+	margin: 5% 40% 15% 40%;
+}
+
+.nav-tab
+{
+	display:inline-block;
+}
+
+#navigationTab .nav-tab li{
+	/*display:inline;*/
+	float:left;
+	margin-right:4px;
+	margin-top:4px;
+}
+
+#navigationTab .nav-tab li a{
+	display:block;
+	text-decoration:none;
+	padding: 1px;
+	background-color:rgb(228, 112, 112);
+	border-radius:5px;
+	color:black;
+	width: 72px;
+	height:82px;
+	text-align:center;
+}
+
+#navigationTab .nav-tab li a img{
+	margin-left:0.5em;
+	
+}
+#navigationTab .nav-tab li a:hover{
+	color:white;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
