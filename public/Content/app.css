@@ -1,16 +1,19 @@
-body{margin:0;
+body{
+margin:0;
 background-color:#CBCBCB;
 font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
+
 .outerboxnav{
 	max-height: 250px;
 	height:250px;
 	background: url(/Assets/images/banner-bg.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -325px;
 	
 }
 .outerboxnav img{
-	width:100%;
 	max-height:100%;
 	display:block;
 	margin:auto;
@@ -21,8 +24,6 @@ font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	background: url(/Assets/images/banner-bg.jpg) center no-repeat;
 }
 */
-
-
 ul.topnav{
 	list-style-type:none;
 	margin:0;
@@ -98,16 +99,28 @@ ul.topnav li.icon {display: none;}
 	
 }
 
+/*my image hover over style - common property*/
+.img-hover-over{
+	box-shadow: -5px 9px 36px 3px #fff;
+}
+
+/*TO DO: Update to common .img-hover-over*/
 .outerbox .profile-image img:hover{
 	box-shadow: -5px 9px 36px 3px #fff;
 }
 
+
+
 .footer{
-	margin-top:35px;
+	width: 100%;
+	position: absolute;
+	margin-top:-35px;
 	color:#fff;
-	background-color:#CBCBCB;
-	height:5%;
-	margin-left:45px;
+	background-color:rgb(228, 112, 112);
+	padding-top: 95px;
+	padding-bottom: 66px;
+	z-index: -1;
+	text-align: center;
 }
 
 .title {
@@ -174,5 +187,53 @@ h6{
 	color:white;
 	background-color: rgba(0, 0, 0, 0.2);
 }
+.page-header{
+	padding-top: 20px;
+	display: block;
+	box-sizing: border-box;
+	font-family: "Open Sans","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400px;
+	line-height: 25.6px;
+	word-wrap:break-word;
+}
+.page-header h1{
+	text-align: center;
+}
+h1{
+	line-height: 2.3em;
+	font-size: 2.2em;
+}
 
 
+/* About me page Styles*/
+#about-me-wrapper{
+	width: 34%;
+	max-width: 34%;
+	height: 34%;
+	margin-left: 33%;
+	box-shadow: -5px 15px 36px 3px rgba(0,0,0,0.29);
+}
+
+#about-me-wrapper img{
+	 display: block;
+     width: 100%;
+}
+
+#about-me-wrapper img:hover{
+	box-shadow: -5px 9px 36px 3px #fff;
+}
+
+#wrapper-for-images-no-hover{
+	height: 100px;
+	background: url(/Assets/images/floral-horizontal-ruler.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 7% 0% 5% 40%;
+}
+
+#wrapper-for-images-no-hover img{
+	 max-height:100%;
+	 display:block;
+	 margin:auto;
+
+}
