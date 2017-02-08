@@ -223,17 +223,22 @@ h1{
 	box-shadow: -5px 9px 36px 3px #fff;
 }
 
-#wrapper-for-images-no-hover{
+.wrapper-for-images-no-hover{
 	height: 100px;
+	width: 34%;
+	max-width: 34%;
 	background: url(/Assets/images/floral-horizontal-ruler.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: 7% 0% 5% 40%;
+	margin: 5% 53% 5% 32%;
+	background-position: center;
 }
 
-#wrapper-for-images-no-hover img{
+.wrapper-for-images-no-hover img{
 	 max-height:100%;
+	 width: 100%;
 	 display:block;
 	 margin:auto;
-
 }
+
+
