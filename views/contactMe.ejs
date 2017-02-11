@@ -1,6 +1,8 @@
 <!--My Portfolio-->
 <!-- Author: Amandeep Aujla, JAN 2017-->
 <!-- Contact Me Page: Information how to contact me -->
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,17 +21,9 @@
     <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
     <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
     <script src ="/Scripts/app.js"></script>
-     <!--Navigation -->
-    <div class="outerboxnav">
-        <ul class="topnav">
-        <li><a href="/">Home</a><li>
-        <li><a href="/projects">Projects</a><li>
-        <li><a href="/contactMe">Contact Me</a><li>
-        <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li>
-        </ul>
-        </div>
+
+     <!--Header -->
+        <% include ./partials/header %>
 
     <!--Main outer Box -->
     <div class="outerbox"> 
@@ -95,9 +89,9 @@
     
     </div>
     <div>
-       <!--Footer -->
-      <div class= "footer">
-      &copy;2017- Amandeep Aujla
-     </div>
+       
+        <!--Footer -->
+         <% include ./partials/footer %>
+         
      </body>
 </html>

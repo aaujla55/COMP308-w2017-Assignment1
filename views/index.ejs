@@ -1,7 +1,7 @@
 <!--My Portfolio-->
 <!-- Author: Amandeep Aujla, JAN 2017-->
 <!-- Home Page:Home Page of the website-->
-
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
 
 <!DOCTYPE html>
 <html>
@@ -23,17 +23,9 @@
     <!--<script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js">-->
    <script src ="/Scripts/app.js"></script></script>
  
-    <!--top navigation bar -->
-        <div class="outerboxnav">
-        <ul class="topnav">
-        <li class="active"><a href="/">Home</a><li>
-        <li><a href="/projects">Projects</a><li>
-        <li><a href="/contactMe">Contact Me</a><li>
-        <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li>
-        </ul>
-        </div>
+        <!--Header -->
+        <% include ./partials/header %>
+
        <!--Main outer Box -->
         <div class="outerbox">
 
@@ -67,10 +59,9 @@
         </div>
 
         </div>
-      <!--Footer -->
-        <div class= "footer">
-        &copy;2017- Amandeep Aujla
-        </div>
+
+        <!--Footer -->
+         <% include ./partials/footer %>
 
   </body>
 </html>

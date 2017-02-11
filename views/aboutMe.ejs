@@ -1,6 +1,8 @@
 <!--My Portfolio-->
 <!-- Author: Amandeep Aujla, JAN 2017-->
 <!-- About Me Page: description about me -->
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,16 +22,10 @@
     <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
     <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
     <script src ="/Scripts/app.js"></script>
-     <div class="outerboxnav">
-        <ul class="topnav">
-        <li><a href="/">Home</a><li>
-        <li><a href="/projects">Projects</a><li>
-        <li><a href="/contactMe">Contact Me</a><li>
-        <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li>
-        </ul>
-        </div>
+
+     <!--Header -->
+        <% include ./partials/header %>
+
     <!-- Main Outer Box-->
     <div class="outerbox"> 
     <div class = "page-header">
@@ -54,14 +50,15 @@
     <div class= "txt-description">
     <p>In love with all design, music and the internet lifestyle we're living and experiencing still today.I am a music person. My interests do not limit there. I paint abstract water paintings. Basically, I love playing with colors. I like to mix and match different color combinations in all my daily routine and work too. My dream is to travel world, visit and explore different places</p>
     </div>
-    
+
     <div class= "wrapper-for-images-no-hover">
     </div>
     
     </div>
-   <!--Footer -->
-     <div class= "footer">
-      &copy;2017- Amandeep Aujla
+   
+        <!--Footer -->
+         <% include ./partials/footer %>
+         
      </div>
   </body>
 </html>
