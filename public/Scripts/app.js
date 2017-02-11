@@ -1,3 +1,6 @@
+/*AUTHOR: Amandeep Aujla*/
+/*Basic JAVASCRIPT/JQUERY goes here*/
+
 
  $(document).ready(function(){
       $(window).scroll(function() { // check if scroll event happened

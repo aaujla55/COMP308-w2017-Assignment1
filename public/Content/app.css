@@ -1,3 +1,6 @@
+/*AUTHOR: Amandeep Aujla*/
+/*Basic CSS goes here*/
+
 body{
 margin:0;
 background-color:#CBCBCB;
@@ -353,3 +356,6 @@ h1{
 		margin-top:2%;
 }
 
+innerBox-image{
+	margin-left:40%;
+}
