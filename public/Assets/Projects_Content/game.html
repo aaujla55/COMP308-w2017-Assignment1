@@ -1,0 +1,163 @@
+<!document html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Bug Smasher</title>
+	<link href="game.css" rel="stylesheet">
+</head>
+
+	<body>
+<div class="header"><h1>BUG Smasher</h1></div>
+	<canvas id="myCanvas" width="800" height="500" style="border:1px solid #000000;">
+	</canvas>
+
+		<script type="text/javascript">
+          //
+          var w = window;
+		requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
+					var canvas= document.getElementById('myCanvas');
+					var context= canvas.getContext('2d');
+					var bgImgObj = new Image();//object for background image
+					var heroImgObj = new Image(); //object for hero image
+					var interval=5000;
+					var totalTime=null;
+					var herocaught=0;
+					var heroLocation={
+						x:0,
+						y:0
+					};					
+
+					var resetScoreBox={
+						x: 10,
+						y: 10,
+						width: 150,
+						height: 30,
+						colorNormal: "#B80000"
+					};
+					resetSpeedBox={
+						x: 300,
+						y: 10,
+						width: 150,
+						height: 30,
+						colorNormal: "#B80000"
+					};
+
+
+
+					// var bgReady = false;
+					
+					// bgImgObj.onload = function()
+					// {
+						 
+					// 	bgReady = true;
+						
+					// };
+
+					bgImgObj.src='leaves.png';
+					// var totalTime=null;
+
+					/*var heroReady=false;
+					
+					heroImgObj.onload = function()
+					{
+						// heroReady = true;
+						context.drawImage(heroImgObj,0,0)
+					};*/
+					heroImgObj.src='bug3.png';
+
+
+					//Game objects
+					
+					canvas.addEventListener('click', function(event)
+					{
+						var clickedPosition={
+							x: event.pageX - canvas.offsetLeft,
+							y:event.pageY - canvas.offsetTop
+						}
+					
+
+
+					
+				if (heroLocation.x<=(clickedPosition.x) && clickedPosition.x <= (heroLocation.x+64) && heroLocation.y <=(clickedPosition.y) && clickedPosition.y <= (heroLocation.y+64))
+				 {
+					update();
+					render();
+					interval=interval-200;
+					herocaught=herocaught+1;
+				  }
+				else if (clickedPosition.x>=resetScoreBox.x && clickedPosition.x<=(resetScoreBox.x+resetScoreBox.width) && clickedPosition.y>=resetScoreBox.y && clickedPosition.y<=(resetScoreBox.y+resetScoreBox.height))
+				{
+					herocaught=0;
+				}
+				else if (clickedPosition.x>=resetSpeedBox.x && clickedPosition.x<=(resetSpeedBox.x+resetSpeedBox.width) && clickedPosition.y>=resetSpeedBox.y && clickedPosition.y<=(resetSpeedBox.y+resetSpeedBox.height))
+				 {
+					interval=5000;
+				}
+			});
+		
+
+
+					var render = function()
+					{
+						
+							 context.clearRect(0,0,800,500);//clear image
+
+		                     context.drawImage(bgImgObj,0,0);
+	                         context.drawImage(heroImgObj, heroLocation.x, heroLocation.y);     
+	                         context.fillStyle="#B80000 ";
+								context.font="30px Verdena";
+								context.fillText("Score: "+herocaught, 650, 30);
+								context.beginPath();
+								context.rect(resetScoreBox.x, resetScoreBox.y, resetScoreBox.width, resetScoreBox.height);
+								context.fillStyle=resetScoreBox.colorNormal;
+								context.fill();
+								context.fillStyle="#fff";
+								context.font="20px Verdena";
+								context.fillText("Reset Score", 35, 30);
+								context.beginPath();
+								context.rect(resetSpeedBox.x, resetSpeedBox.y, resetSpeedBox.width, resetSpeedBox.height);
+								context.fillStyle=resetSpeedBox.colorNormal;
+								context.fill();
+								context.fillStyle="#fff";
+								context.font="20px Verdena";
+								context.fillText("Reset Speed", 330, 30); 
+					}
+
+					var update=function(){
+				heroLocation.x= Math.random() * (800- 75);
+				heroLocation.y=height= Math.random() * (500- 75);
+			}
+
+			var main=function(){
+				var now = Date.now();
+				var delta = now - then;
+				totalTime=totalTime+(delta);
+				if (totalTime>=interval) {
+					update();
+					totalTime=0;
+				}
+				render();
+				then=now;
+				requestAnimationFrame(main);
+			}
+			var then=Date.now();
+			update();
+			render();
+			main();
+
+
+
+ 
+
+
+
+
+     </script>
+     <div class="footer">
+							<center><h5> &copy;&nbsp;Copyright Centennial College-COMP229-Amandeep Aujla | Student Number: 300823928 - Fall 2015
+						</h5></center>
+							</div>
+</body>
+</html>

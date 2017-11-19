@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <link rel="icon" type="image/jpg" href="">
+	 <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Form</title>
+	<!-- Author-Amandeep Aujla -->
+	<!--  Student num: 300823928 -->
+	<!--  SECTION=001 -->
+	        <link href="test.css" media="screen" rel="stylesheet" type="text/css" />
+	        
+	        
+</head>
+<body>
+	
+	
+						          
+		<div class="contentBox">
+
+                     <nav id="navBarMain">
+						            <img id="logo" src="car.jpg" />
+						             
+						             </nav>
+<div class="innerBox">
+	
+<center><h1>Rent Vehicles </h1></center>
+		<h2>Please fill in this form to reserve a vehicle:</h2>
+		<h1>Your Contact Information</h1>
+					<form name="vf" action="thanks.html" onsubmit=" return validateForm()">
+					
+					<table>
+						<tr>
+							<td class="label"><b>Phone</b></td>
+							<td><input type="text" name="phone" size="30" class="box"></td>
+						</tr>
+						<tr>
+							<td class="label"><b>E-mail Address:</b></td>
+							<td><input type="text" name="email" size="30" class="box"></td>
+						</tr>
+						<tr>
+							<td class="label"><b>Vehicle Type</b></td>
+							<td> <input class="radio" type="radio" name="vehicle" id="veh" value="1" onclick="minivan(this);"><label id="van">Minivan</label>
+                    <input class="radio" type="radio" name="vehicle" id="veh" value="2" onclick="car(this);"><label id="car">Car</label></td>
+								</td>
+								
+						</tr>
+					</table>
+					
+	
+
+	<h4>Complete only if you want to reserve a vehicle(not  a minivan!!)</h4>
+						
+<table>
+						<tr>
+							<td class="label"><b>Enter Prefered Make</b></td>
+							<td><input type="text" name="make" size="30" class="box" ></td>
+						</tr>
+						<tr>
+							<td class="label"><b>Enter Prefered Model</b></td>
+							<td><input type="text" name="model" size="30" class="box"></td>
+						</tr>
+					</table>
+					<h4>Rental details</h4>
+					<table>
+						<tr>
+							<td class="label"><b>Choose Prefered Pickup Location:</b></td>
+							<td><select name="location" class="box">
+                    <option value="-1" selected >[Not Chosen]</option>
+                    <option value="qc">Downtown</option>
+                    <option value="on">Airport</option>
+                    <option value="mn">Central Station</option>
+                    
+                    
+                </select><br>
+</td>
+						</tr>
+						<tr>
+							<td class="label"><b>Enter Start date</b></td>
+							<td>Month:<input type="number" name="month" size="10" >
+							Day:<input type="number" name="day" size="10" 
+
+
+							 ></tr>
+                    </td>
+						<tr >
+							
+	
+							<td ><input type="submit" name="Save" value="Request Vehicle" class="formButton"></td>
+							<td ><input type="reset" name="Reset" value="Start Again" class="formButton"></td>
+						</tr>
+					</table>
+				</form>
+</div>
+<div class="footer">
+							<center><h6> &copy;&nbsp;Copyright Centennial College-COMP229-Amandeep Aujla | Student Number: 300823928 - Fall 2015
+						</h6></center>
+							</div>
+</div>
+
+</div>
+<script>
+
+
+function validateForm()
+
+
+{
+
+	
+						if (document.vf.phone.value == "" ) {
+					        alert("Please enter  phone");
+					        document.vf.phone.focus();
+					       return false;
+					    }
+
+	                    if (document.vf.email.value == "" ) {
+	                      alert("Please enter your email");
+	                       document.vf.email.focus();
+					        return false;
+	                    }
+
+	                     if(document.vf.vehicle[0].checked==false && document.vf.vehicle[1].checked==false)
+	                   {
+	                   	alert("Please click on the type of vehicle you want to rent");
+	                   	return false;
+	                   }
+
+	                    if (document.vf.location.value == -1) {
+	                      alert("Please select one of the locations");
+	                      return false;
+	                     
+	                     }
+
+			            if (document.vf.month.value == "") {
+	       				alert("Enter a Month");
+	       				 document.vf.month.focus();
+					        return false;
+	    				}
+	         			  if (document.vf.month.value<1 || document.vf.month.value>12 )
+                     	{
+                     		alert("Month should be a value between '1'-'12'");
+                          document.vf.month.focus();
+                          return false;
+                     	}
+                     
+                     	
+					    if (document.vf.day.value == "") {
+					        alert("Enter a date");
+					         document.vf.day.focus();
+					        return false;
+					    }
+					  
+					    if (document.vf.day.value<1 || document.vf.day.value>31  )
+                      {
+                          alert("Date should be a value between '1'-'31'");
+                           document.vf.day.focus();
+                          return false;
+                      }
+	                   
+                      else{
+                      	return true;
+                      }
+
+
+                  }
+             
+function minivan(radio){
+	
+    if(radio.checked)
+        {
+	      	document.getElementById("van").style.color="green";
+		   	document.vf.make.value = "N/A";
+		    document.vf.model.value = "N/A";
+		  	document.vf.location.value = "N/A";
+		    document.vf.make.disabled = true;
+		    document.vf.model.disabled = true;
+		    document.vf.location.disabled = true ;
+
+            alert("All our minivans are 2015 or newer Dpodge GRand Caravans.The only pick up/drop off location is 123 Main St");
+            
+
+           }
+}
+
+function car(radio){
+    if(radio.checked)
+        {
+        		document.vf.make.value = "";
+    			document.vf.model.value = "";
+    			document.getElementById("van").style.color="black";
+            	document.vf.make.disabled = false;
+             	document.vf.model.disabled = false;
+            	 document.vf.location.disabled = false;
+            	
+            	if(document.vf.make.value =="")
+            		{
+            			alert("Please enter Make");
+					        document.vf.make.focus();
+					        
+            		}
+            		if(document.vf.model.value =="")
+            		{
+            			alert("Please enter Model");
+					        document.vf.model.focus();
+					        return false;
+            		}
+            	
+            		
+         }
+}
+
+
+</script>
+
+	</body>
+	</html>

@@ -1,0 +1,20 @@
+body{
+	background-image: url("bleaves3.jpg");
+	
+
+}
+.header{
+
+background-color: #44A624;
+color:#fff;
+padding-left: 6px;
+
+
+}
+
+canvas
+	{
+		display:block;
+		position:relative;
+	    margin: auto;
+}			

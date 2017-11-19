@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <link href="content.css" media="screen" rel="stylesheet" type="text/css" />
+	 <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home Page</title>
+	<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "aman_profile.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "diwali2.jpg"
+
+
+</script>
+</head>
+
+<body>
+<div class="main_box">
+<div class="header">
+	<img src="Centennial-Logo.jpg" alt="Centennial College Logo">
+</div>
+<div class="background-box">
+<div class="profile">
+	<!-- //<img src="aman_profile.jpg" alt="Profile">
+	 -->
+	<img src="firstcar.gif" id="slide" width="100" height="56" />
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<1)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",4500)
+}
+
+slideit()
+
+</script>
+</script>
+
+</div><center><h3 class= "profile_name">Amandeep Aujla</h3></center>
+	<center><h3 class= "profile_name">#300823928</h3></center></div>
+<div class="purple_strip">
+	<div class="web_name">
+		<h2 align="right" >
+			"COMP229 &nbsp;- Advanced Web Application - Fall 2015 &nbsp;"
+	</div>
+	</div>
+	<div class="my_info">
+		<h4> Student Name:Amandeep Aujla | Student Number:300823928</h4>
+		<p>I am a student in the third semester of Software Engineering Technician at Centennial College.
+        I love to spend time with my family.<br>I am passionate to learn and explore things.I am multi-tasking and flexible in work.</p>
+         <h3>Some of my favorite activities are:</h3>
+
+<ul style ="list-style-image:url(4.gif);">
+<li>Designing</li>
+<li>Painting</li>
+<li>Cooking</li>
+<li>Adventure</li>
+<li>Music</li>
+<li>Shopping</li>
+<li>Travelling</li>
+</ul>
+<br>
+
+ <h3>My Favorite Saying:</h3>
+ <div class ="quoteFont">Two roads diverged in a wood, and I took the one less travelled by, and that has made all the difference."</div> <em>-Robert Frost</em>
+
+
+	</div>
+
+<div class="purple_strip">
+	<div class="web_name">
+		<h2 align="left" >
+			Related Links:</div>
+</div>
+<div class="nav">
+	<ul>
+		<li>
+			<a href="index.html" class="design-name">Assignment 1</a>
+		</li>
+		<li>
+			<a href="assignment2.html" class="design-name">Shopping Website</a>
+		</li>
+		<li>
+			<a href="assignment3.html" class="design-name">Form</a>
+		</li>
+		<li>
+			<a href="game.html" class="design-name">Bug Smasher-Canvas Game</a>
+		</li>
+		<li>
+			<a href="PracticalTest300823928.html" class="design-name">Midterm Practical Exam</a>
+		</li>
+		<li>
+			<a href="" class="design-name">Final Project</a>
+		</li>
+
+</ul>
+</div>
+
+<div class="footer">
+	<h6> &copy;&nbsp;Copyright Centennial College-COMP229-Amandeep Aujla | Student Number: 300823928
+</h6>
+	</div>
+</div>
+
+</body>
+</html>

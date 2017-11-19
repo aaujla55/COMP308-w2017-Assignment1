@@ -1,0 +1,165 @@
+body{
+/*font-family: Arial, Helvetica, sans-serif;*/
+font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;	
+	background: #3c1d08 url('myBackground.jpg') no-repeat fixed 50% top;
+
+}
+.main_box{
+	width:65%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header{
+	text-align: left;
+	
+    background-color: #804;
+}
+
+.header img{
+width:25%;
+height:15%;
+margin-left: 4px;
+margin-top:4px;
+
+
+}
+.background-box{
+    width: 100%;
+    margin:5px;
+}
+
+.profile{
+    /*border:1px solid red;*/
+    border-radius: 1005px;
+    width: 440px;
+    height: 440px;
+    margin:     0 auto;
+    /*margin-left: -15%;*/
+    z-index: 1;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fceec6;
+
+  
+        
+}
+.profile:hover{
+    box-shadow: 0px 0px 10px 5px ivory;
+    /*border:1px solid red;*/
+    border-radius: 1005px;
+    width: 440px;
+    height: 440px;
+    margin:     0 auto;
+    /*margin-left: -15%;*/
+    z-index: 1;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fceec6;
+
+  
+        
+}
+.profile img{
+  border-radius: 200px;
+  height:530px;
+  width:470px;
+  margin-top: -15px;
+  border: 0px;
+  margin-left: -20px;
+  
+
+}
+.profile_name
+{
+    margin-top: 10px; 
+	color: #724;
+	margin:5px;
+	font-family: 'Istok Web Bold', Arial, sans-serif; 
+}
+.purple_strip{
+	background-color:#804;
+	color:#FFFFFF;
+	
+}
+.web_name
+{
+	padding: 20px;
+
+}
+.my_info{
+	background-color: #fceec6;
+    color:#804;
+    padding:10px;
+}
+.quoteFont{
+	font-family: Papyrus, fantasy;
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 25.4px;
+}
+
+
+.footer{
+	background-color:#804;
+	color:#FFFFFF;
+	bottom: 0px;
+    width: 100%;
+    opacity: 0.6;
+}
+.nav ul{
+    margin:0px;
+}
+li{
+    
+    display: list-item;
+    color:#804;
+}
+h6{
+    margin: 0px;
+    width:100%;
+
+}
+
+/*li:link
+{
+    color: #804;
+}
+li:visited
+{
+    color: #D24D57;
+}*/
+.nav li a:hover {
+    
+    color:#E26A6A;
+}
+.nav ul{
+    padding:15px;
+    margin-left: 25px;
+   }
+.nav{
+    background-color: #fceec6;
+    margin: 0px;
+}
+.design-name{
+    color:#804;
+    text-decoration: none;
+}
+/*h2{
+    font-family: Papyrus, fantasy;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 25.4px;
+}*/
+.label{
+}
