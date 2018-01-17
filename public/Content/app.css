@@ -170,6 +170,9 @@ h6{
 		margin-left:20%;
 		margin-right:20%;
 		margin-top:2%;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
 		
 }
 #navigationTab {
@@ -195,15 +198,15 @@ h6{
 	background-color:rgb(228, 112, 112);
 	border-radius:5px;
 	color:black;
-	width: 72px;
+	width: 80px;
 	height:82px;
 	text-align:center;
 }
 
-#navigationTab .nav-tab li a img{
+/* #navigationTab .nav-tab li a img{
 	margin-left:0.5em;
 	
-}
+} */
 #navigationTab .nav-tab li a:hover{
 	color:white;
 	background-color: rgba(0, 0, 0, 0.2);
