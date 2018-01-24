@@ -19,9 +19,13 @@
   
   <body>
   <!--Scripts -->
-    <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
-    <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
-    <script src ="/Scripts/app.js"></script>
+  
+  
+    <script src="/Scripts/jquery.min.js"></script>
+    <script src="/Scripts/jquery.easing.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/custom.js"></script>
+     
 
     <!--Header -->
         <% include ./partials/header %>
@@ -47,124 +51,237 @@
               </a>
             </li>
       </ul>
-     <BR><BR>
+   
 
-     <h1>Web Development</h1>
-    
-        <div class="row">
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+      <div class="col-md-12  text-center" id="menu-flters">
+          <ul>
+            <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
+            <li><a class="filter" data-filter=".website">Websites</a></li>
+            <li><a class="filter" data-filter=".game">Games</a></li>
+            <li><a class="filter" data-filter=".healthTech">Health Informatics</a></li>
+            <li><a class="filter" data-filter=".net">.Net &amp; APIs</a></li>
+            <li><a class="filter" data-filter=".java">Java and Andriod</a></li>
+            <li><a class="filter" data-filter=".mining">Data Warehouse and Mining</a></li>
+             <li><a class="filter" data-filter=".agile">Agile SDLC</a></li>
+            <li><a class="filter" data-filter=".pm">IT Project Management</a></li>
+
+          </ul>
+        </div>
+        <!-- projects -->
+  <section id="menu-list" class="section-padding">
+    <div class="container">
+        <div id="menu-wrapper">
+          <div class="website menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj9.jpg" data-toggle="tooltip" data-placement="top" alt="Survey Master Website" title="MEAN STACK"/>
+                  <div class="overlay">
+                  <h2>Centennial Cafe</h2>
+                 <a class="info" href="http://cafecentennial.herokuapp.com/">MEAN Stack Website</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">NodeJs based food ordering web application retreiving data from MLab and published on Heroku</span>
+          </div>
+
+          <div class="game menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj9.jpg" data-toggle="tooltip" data-placement="top" alt="Survey Master Website" title="MEAN STACK"/>
+                  <div class="overlay">
+                  <h2>Pheonix Saga</h2>
+                 <a class="info" href="https://taranjit91.github.io/PheonixSaga/"> 2D Shooter Game</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">A 2D side-scrolling shooting game based on Arabic mythology of Phoenix using CreateJs</span>
+          </div>
+
+
+          <div class="website menu-restaurant">
+            <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj9.jpg" data-toggle="tooltip" data-placement="top" alt="Survey Master Website" title="MEAN STACK"/>
                   <div class="overlay">
                   <h2>Survey Master</h2>
                  <a class="info" href="https://surveymaster.herokuapp.com/">MEAN STACK WEBSITE</a>
                 </div>
                </div>
-             </div>
+            <span class="menu-subtitle">Survey Master is a web application using MEAN stack to build surveys to get your answers anytime</span>
+          </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+          <div class="website menu-restaurant">
+            <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj2.jpg" data-toggle="tooltip" data-placement="top" alt="ISP" title="Intelligent Stock Picker"/>
                   <div class="overlay">
                   <h2>Intelligent Stock Picker</h2>
                  <a class="info" href="https://comp231-w17-isp.herokuapp.com/">FRONT END ONLY</a>
                 </div>
                </div>
-             </div>
+            <span class="menu-subtitle">ISP provides the user with information on which stocks are best for them to invest in.(Back end detached because of privacy)</span>
+          </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+          <div class="website menu-restaurant">
+            <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj9.jpg" data-toggle="tooltip" data-placement="top" alt="Basic product catalogue" title="Basic product catalogue"/>
                   <div class="overlay">
                   <h2>Add to Cart</h2>
                  <a class="info" href="/Assets/Projects_Content/assignment2.html">WEB PAGE</a>
                 </div>
                </div>
-             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+            <span class="menu-subtitle">Add to cart web page showing built using HTML, CSS3 and JavaScript - no Bootstrap used</span>
+          </div>
+
+          <div class="website menu-restaurant">
+             <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj2.jpg" data-toggle="tooltip" alt="JS Validation Example">
                   <div class="overlay">
                  <h2>Registration Form</h2>
                  <a class="info" href="/Assets/Projects_Content/assignment3.html">HTML FORM</a>
                 </div>
                </div>
-             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+            <span class="menu-subtitle">A web page showing registration form built using HTML, CSS3 and JavaScript - no Bootstrap used</span>
+          </div>
+
+          <div class="website menu-restaurant">
+           <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj3.png" data-toggle="tooltip" title="Real Estate Website">
                   <div class="overlay">
                  <h2>Real Estate</h2>
                  <a class="info" href="/Assets/Projects_Content/realEstate/index.html">WEBSITE</a>
                 </div>
                </div>
-             </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+            <span class="menu-subtitle">A 5 page static website built using HTML, CSS3 and JavaScript - no Bootstrap used</span>
+          </div>
+
+          <div class="game menu-restaurant">
+           <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj4.jpg" data-toggle="tooltip" alt="Canvas Game" title="Canvas Game" >
                   <div class="overlay">
                  <h2>Bug Smasher</h2>
                  <a class="info" href="/Assets/Projects_Content/game.html">CANVAS GAME</a>
                 </div>
-               </div>
-             </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+                </div>
+            <span class="menu-subtitle">A 2D Canvas based game - BugSmasher built using HTML5 and JavaScript. Smash the bug!</span>
+          </div>
+
+          <div class="website menu-restaurant">
+             <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj1.jpg" data-toggle="tooltip" title="JS Validation Form">
                   <div class="overlay">
-                 <h2>Rent Vehicle</h2>
+                  <h2>Rent Vehicle</h2>
                  <a class="info" href="/Assets/Projects_Content/PracticalTest300823928.html">HTML FORM</a>
                 </div>
-               </div>
-             </div>
+                </div>
+            <span class="menu-subtitle">A web page having Rent Vehicle form using HTML, CSS3 and JavaScript - no Bootstrap used</span>
+          </div>
 
-             </div>
-
-             <h1>Software Development Methodology</h1>
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+          <div class="healthTech menu-restaurant">
+            <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj6.jpg" data-toggle="tooltip" title="EHR Documented Deployment Analysis">
                   <div class="overlay">
                  <h2>EHR DEPLOYMENT</h2>
                  <a class="info" href="https://drive.google.com/open?id=0B_iVCkTj_CxWekdVd3JhLUEwYmc">DOC</a>
                 </div>
                </div>
-             </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+            <span class="menu-subtitle">Proposal for EHR Deployment for acute care admission in Scarborough General Hospital</span>
+          </div>
+
+          <div class="agile menu-restaurant">
+             <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj7.jpg" data-toggle="tooltip" title="Information system">
                   <div class="overlay">
                  <h2>Gym Management System</h2>
                  <a class="info" href="/Assets/Projects_Content/Gym.pdf">DOC</a>
                 </div>
                </div>
-             </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
+            <span class="menu-subtitle">Information System design documnet with use case, domain class diagram, design detail diagram, crc cards, package, sequence, state, erd diagram</span>
+          </div>
+
+          <div class="agile menu-restaurant">
+            <div class="hovereffect">
                 <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
                   <div class="overlay">
                  <h2>Pharmacy Management System</h2>
                  <a class="info" href="/Assets/Projects_Content/Pharmacy.pdf">DOC</a>
                 </div>
                </div>
-             </div>
+            <span class="menu-subtitle">Information System design documnet with use case, domain class diagram, design detail diagram, crc cards, package, sequence, state, erd diagram</span>
           </div>
-          <h1>Andriod development</h1>
-           <div class="row"></div>
-          <h1>Datawarehouse and Mining</h1>
-            <div class="row">
-            •	Experience in creating multidimensional and tabular OLAP
-            •	Worked with ETL, Integration services, Reporting services to implement Data Mining
-</div>
-        </div>
-         <div class= "wrapper-for-images-no-hover">
-        </div>
+
+
+           <div class="healthTech menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>EHR Research Paper</h2>
+                 <a class="info" href="https://drive.google.com/open?id=1r22fQKAjoSw-4xAVATKwj3yYtcM3GlUJ">DOC</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">Research on AmarDoctors, PracticeFusion, Care360 and SOAPWare</span>
+          </div>
+
+
+          <div class="agile menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>Amazon SCM Research Paper</h2>
+                 <a class="info" href="https://drive.google.com/open?id=1UzFYc5Q3pMz0Q4_wfbzQ1yEYsYrDEndM">DOC</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">Amazon Supply Chain Management Research paper with their respective use cases</span>
+          </div>
+
+          <div class="agile menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>CafeCentennial Release Plan</h2>
+                 <a class="info" href="https://drive.google.com/open?id=1XdOsrtT5zkDVxRYQ6KgVtELpLbV_asjSWwkvoLKYcdk">Release Plan</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">Release Plan of CafeCentennial application, including brainstorming, user stories and Iteration plans</span>
+          </div>
+
+           <div class="agile menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>ISP Release Plan</h2>
+                 <a class="info" href="https://drive.google.com/open?id=0B8_OucUiO9bJaEdTbDJIZ0c1MHc"> ISP Release Plan</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">Release Plan for development of ISP application, including brainstorming, user stories and Iteration plans</span>
+          </div>
+
+          <div class="pm menu-restaurant">
+            <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>Employment Hub</h2>
+                 <a class="info" href="https://drive.google.com/open?id=1l_zTb86hYVsUUCsL4qpzzCuJEIrPZz-m">DOC</a>
+                </div>
+               </div>
+            <span class="menu-subtitle">The purpose of this report is to provide the general framework and establish specific strategies
+        and milestones for execution of Employment Hub project. This document also defines the
+        project&#39;s requirements and expectations.</span>
+          </div>
+
+          <div class="net menu-restaurant">
+           
+          </div>
+
+      </div>
+    </div>
+
+
+  </section>
+  <!--/ projects -->
+    
+       
+          
+       
         </div>
         </div>
         
         <!--Footer -->
+        
          <% include ./partials/footer %>
          
   </body>
